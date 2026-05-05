@@ -1,0 +1,352 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Limina Consumer Lab | Intelligence for the Intelligent Observer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#69cce5",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-high": "#ffe4c8",
+                    "background": "#fff8f4",
+                    "tertiary-fixed": "#ffddb9",
+                    "tertiary-container": "#dcb892",
+                    "surface-container": "#ffead7",
+                    "surface-container-highest": "#ffddb9",
+                    "error": "#ba1a1a",
+                    "on-surface-variant": "#4d4636",
+                    "surface": "#fff8f4",
+                    "on-primary-container": "#005564",
+                    "inverse-on-surface": "#ffeedf",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-fixed-variant": "#004e5c",
+                    "on-background": "#2a1701",
+                    "inverse-surface": "#422c10",
+                    "on-error": "#ffffff",
+                    "surface-container-low": "#fff1e6",
+                    "on-secondary-fixed-variant": "#584400",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed-dim": "#e4c09a",
+                    "on-primary": "#ffffff",
+                    "on-secondary-fixed": "#241a00",
+                    "inverse-primary": "#71d4ed",
+                    "primary-fixed-dim": "#71d4ed",
+                    "on-surface": "#2a1701",
+                    "primary-fixed": "#acedff",
+                    "primary": "#00687a",
+                    "secondary-fixed-dim": "#ebc24e",
+                    "on-tertiary-container": "#62482a",
+                    "surface-variant": "#ffddb9",
+                    "secondary-container": "#fdd35d",
+                    "surface-bright": "#fff8f4",
+                    "surface-dim": "#f9d4ac",
+                    "secondary": "#755b00",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#75593a",
+                    "surface-tint": "#00687a",
+                    "on-secondary-container": "#745a00",
+                    "secondary-fixed": "#ffe090",
+                    "on-tertiary-fixed": "#2a1701",
+                    "on-primary-fixed": "#001f26",
+                    "outline": "#7f7663",
+                    "outline-variant": "#d0c5b0",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed-variant": "#5b4225"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "display": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #fff8f4; color: #2a1701; }
+        .font-serif { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased" data-mode="connect">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-stone-50/80 backdrop-blur-xl shadow-[0_20px_50px_rgba(42,23,1,0.06)]">
+<div class="max-w-7xl mx-auto flex justify-between items-center px-8 h-20">
+<div class="flex items-center"><img alt="Limina Consumer Lab" class="h-12 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0ui53bpJWdZ_33GvmXL_vHSgPSnSkGjL0UBdcdNYTHSTr4y_EVTMEXTWB9UXRAlvQ2dKCGQsPce6zbcMDwS3wMRC_eZ6TMs_SoqjUA_jb_BNQQ_sKt7D5-N3IJfNYtqiXxlK7UlCT8RdVRR-oGdF1IK1Wa3Br5_A5NuIdju_CZaKJ4NoFBpc3tIyxzuuH3zU-rxm4r3r2b1Lf4rwl2hZKnCvbPgZIl8yG-AdbIP8SzKfkrWjxOTw9YvwtJhR15q43f2YAkeBfFlUZA"></div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-stone-600 font-medium hover:text-stone-900 font-serif text-lg tracking-tight uppercase transition-all duration-300" href="#"><br></a>
+<a class="text-stone-600 font-medium hover:text-stone-900 font-serif text-lg tracking-tight uppercase transition-all duration-300" href="#"><br></a>
+<a class="text-stone-600 font-medium hover:text-stone-900 font-serif text-lg tracking-tight uppercase transition-all duration-300" href="#"><br></a>
+<a class="text-stone-600 font-medium hover:text-stone-900 font-serif text-lg tracking-tight uppercase transition-all duration-300" href="#"><br></a>
+<a class="text-stone-600 font-medium hover:text-stone-900 font-serif text-lg tracking-tight uppercase transition-all duration-300" href="#"><br></a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 font-label font-semibold scale-95 active:scale-90 transition-transform rounded-DEFAULT">liminaconsumerlab@gmail.com | +91-9830271786</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-32 pb-24 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 z-10">
+<h1 class="font-serif text-6xl md:text-8xl leading-[1.1] text-on-surface mb-8 tracking-tighter">
+                    We help you <span class="italic text-primary">decode</span> your business problems beyond data to unlock future.
+                </h1>
+<p class="font-body text-xl text-on-surface-variant max-w-xl leading-relaxed mb-10">
+                    Limina Consumer Lab bridges the gap between raw data and human intuition. We transform complex market signals into clear, actionable intelligence.
+                </p>
+<div class="flex items-center gap-6">
+<button class="text-primary font-bold flex items-center gap-2 group"><br><br></button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A warm, cinematic illustration of the Limina Consumer Lab studio with a team working on strategy and insights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0_l2nQjoPN5tndEGQe8o4LPHWrweCi9v64ImY4u-0qWVLWWWC5kSTjfOnvwS6CGA9N0lxjhIRC0QZTNc2EHHnp0C_JmSIQlTyTKSYXhQKQ16pYiIGzicKzj7tPLqP96Ozi8AHFR-PbLg8_scmwhbu6ZZBqHDRHBrYPgW5vu9bClQVZhsDQgfdb6rakJwt-KVaQWg-uOBvcRnYRWd9MGbb94uMGRbsgHPltWnf2QmTXvZmUswPzqFKH16ueHQHLmOtXtW-9mSUF4M">
+</div>
+<div class="absolute -bottom-6 -left-6 bg-secondary-container p-8 rounded-lg shadow-xl max-w-xs">
+<p class="font-serif italic text-on-secondary-container text-lg">"The intelligence is not in the data, but in the observation."</p>
+</div>
+</div>
+</div>
+</header>
+<!-- About Section -->
+<section class="py-24 bg-surface-container-low px-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row gap-16 items-start">
+<div class="md:w-1/3">
+<span class="font-label uppercase tracking-widest text-primary font-bold text-sm mb-4 block"><br></span>
+<h2 class="font-serif text-4xl text-on-surface leading-tight">Decoding Complexity with Precision</h2>
+</div>
+<div class="md:w-2/3">
+<p class="font-body text-2xl text-on-surface-variant leading-relaxed mb-8">
+                        The modern marketplace is a storm of noise. Limina provides the quiet space and the analytical tools to isolate the signals that matter. We don't just observe consumer behavior; we decode the underlying psychology that drives it.
+                    </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12">
+<div class="p-8 bg-surface-container-lowest rounded-xl">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">insights</span>
+<h4 class="font-bold text-lg mb-2">Market Challenges</h4>
+<p class="text-on-surface-variant">Navigating shifts in retail, digital ecosystems, and consumer loyalty.</p>
+</div>
+<div class="p-8 bg-surface-container-lowest rounded-xl">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">psychology</span>
+<h4 class="font-bold text-lg mb-2">Consumer Logic</h4>
+<p class="text-on-surface-variant">Understanding the irrational drivers behind rational purchase decisions.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Intelligence Platforms -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-20">
+<h2 class="font-serif text-5xl mb-6">Proprietary Intelligence Platforms</h2>
+<div class="h-1 w-24 bg-secondary mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+<!-- Sentio -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden transition-all hover:-translate-y-2 hover:shadow-2xl flex flex-col">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A warm, cinematic illustration of a modern Limina Consumer Lab meeting room where a team is decoding customer feedback into behavioral intelligence using the Sentio framework." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgDPh-eKhl3CGDpxyCeB-aI8XZ9LQ31XdMRu25lmO6skbYDTezECILCbm_BOA5yMcMQnWflXtbe5uLRidWZ8l0QVYbdhRBrZHnVmm2TYLX-F5lxCsGG05QxZgUuJ22tY19fE2AkjNtK0uVcr3ZlqoMcfa9kQPsoZUlndtIePB-rs4Ihn-sd5Ke3Jke_aaofA2dck2lkqpzysyK3PljhOHtBYTynZdzYqP9tQXjN18se8U1sSJ2LepOlOxhyzzuqUmnlI-MpB6oE2E">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-4 left-6">
+<h3 class="text-white font-serif text-3xl">Sentio</h3>
+</div>
+</div>
+<div class="p-8 flex-grow">
+<p class="text-primary font-bold text-sm uppercase tracking-widest mb-4">Behavioral Intelligence</p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="text-on-surface-variant">Feedback -&gt; Signal Processing</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="text-on-surface-variant">Behavior Decoding</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="text-on-surface-variant">Real-time Decision Signals</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Vindex -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden transition-all hover:-translate-y-2 hover:shadow-2xl flex flex-col">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="An abstract representation of a modern retail environment, utilizing light and shadow to create geometric patterns. The aesthetic is clean, sophisticated, and analytical, with a focus on structure and flow. The color palette emphasizes taupe and gold highlights against a bright background, representing retail intelligence and KPI analysis." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRe63H5J57QTcS7NoEuM7KBGYsmewxhXFVzgZacRnRNy663VDWQ1bCTOr-ARpZu40ASbp_HFa2IL09uHDCRiOkig5hq1jE1f-35OYqLHEUKoV_inGZGH417H2TwYEUWWWLI7kBFFET_kNKLrBET2qgSo03N9Asx8d3rt_MkhDsY1Rx8xpoGGdr_FFUsOXStdYGIumx7MUCm0b-y66pTJUKTRVxfbk_4KsQd2iaJfslas5eHWCwP0B9lcmVbJqe2BB2K9X7SrfWb_M">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-4 left-6">
+<h3 class="text-white font-serif text-3xl">Vindex</h3>
+</div>
+</div>
+<div class="p-8 flex-grow">
+<p class="text-primary font-bold text-sm uppercase tracking-widest mb-4">Retail Intelligence</p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="text-on-surface-variant">Raw Input -&gt; Contextual Analysis</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="text-on-surface-variant">Output Strategy Alignment</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="text-on-surface-variant">KPI Acceleration Engine</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- ProQ -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden transition-all hover:-translate-y-2 hover:shadow-2xl flex flex-col">
+<div class="aspect-video relative overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A warm, cinematic office illustration showing LIMINA ProQ being presented inside a modern consumer intelligence lab. The image details the ProQ framework: Conversation Intensity, Advocacy Strength, Amplification Power, and Influence Quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxjSxAcQHYwpBzQdASk-BN66ToWh_o3AptklxJcc96TyFZZnb_dazUKCtZaY-ACiDITex0AmxRaSO53fIyp_nxrAn0N-3CmfurpgGqFZQhlIDUTAFgMBdKGKecF--VFPMCYfwEoSfs_XoWSOaM7CtWDj3CJLpexXUas4eZW9ittSvVWue9FewkyzI31G83U7CN2_yLX71YlU61EHsBPoIdzmeZVmINe6sczbkrqTNlzZNzy1hQwBkj0HBCA82OB8LGVAbm2HF-CV0">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-4 left-6">
+<h3 class="text-white font-serif text-3xl">ProQ</h3>
+</div>
+</div>
+<div class="p-8 flex-grow">
+<p class="text-primary font-bold text-sm uppercase tracking-widest mb-4">Prosumer Quotient</p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="text-on-surface-variant">Conversation Intensity</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="text-on-surface-variant">Advocacy Strength</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="text-on-surface-variant">Amplification Power</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: &quot;FILL&quot; 1;">check_circle</span>
+<span class="text-on-surface-variant">Influence Quality</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pillars of Trust -->
+<section class="py-32 px-8 bg-surface-container">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="order-2 lg:order-1">
+<img class="w-full rounded-2xl shadow-2xl" data-alt="A premium, minimal 3D render of three architectural pillars for a professional market research firm. The three pillars are colored specifically: one in a dark teal, one in a golden ochre, and one in a soft taupe. These three pillars support a flat, elegant platform on top. On top of this platform sits a sophisticated, crystalline trophy. The background is a clean, minimal light taupe. High-end, editorial aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCH06XgULxnu4YeJG_RXKHdXXJEC3-0yIY0nk_oL_aFPPh8scc4R5enwMQFpfHUAhnjTsW_HJWQ7Qo5amTTVkqL1AVuaS-xATutVYRFSyTn890U6Wmj1tUU0aZ0fj3jCu1V-BQylTo2pR1EigiuI31eJJ2IHCD0bruXOHsoRJa5bs1ZoxNl32gGi6zyT5A5v-UusbkeJLlF_GLbVyWYhMnOes7SSNhEkz3x6xETNRVezetyoAmxoCpc9f4R0IwD2ycbRKgDuaI1Dug">
+</div>
+<div class="order-1 lg:order-2">
+<h2 class="font-serif text-5xl mb-12">The Three Pillars of Trust</h2>
+<div class="space-y-12">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center font-serif text-xl">1</div>
+<div class="">
+<h3 class="text-2xl font-serif mb-2">Human Depth</h3>
+<p class="text-on-surface-variant text-lg">Decoding the psychology of choice beyond the spreadsheet. We understand the 'why' behind the 'what'.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-serif text-xl">2</div>
+<div class="">
+<h3 class="text-2xl font-serif mb-2">AI-Enhanced Judgment</h3>
+<p class="text-on-surface-variant text-lg">Leveraging pattern detection and predictive accuracy to eliminate cognitive bias in market forecasting.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-serif text-xl">3</div>
+<div class="">
+<h3 class="text-2xl font-serif mb-2">Shared Accountability</h3>
+<p class="text-on-surface-variant text-lg">Outcome-linked engagements. We don't just deliver reports; we deliver the intelligence that drives success.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Solutions -->
+<section class="py-32 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="font-label uppercase tracking-widest text-primary font-bold text-sm mb-4 block">Our Expertise</span>
+<h2 class="font-serif text-5xl text-on-surface">Core Solutions</h2>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Solution 1 -->
+<div class="p-10 bg-surface-container-low hover:bg-surface-container-high transition-colors group">
+<h4 class="font-serif text-2xl mb-4 group-hover:text-primary transition-colors">Understanding<br>Behavior<br><br></h4>
+<p class="text-on-surface-variant mb-6">Deep ethnographic and quantitative studies into modern consumer behaviors.</p>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">psychology</span>
+</div>
+<!-- Solution 2 -->
+<div class="p-10 bg-surface-container-low hover:bg-surface-container-high transition-colors group">
+<h4 class="font-serif text-2xl mb-4 group-hover:text-primary transition-colors">Brand &amp; Experience<br>Intelligence</h4>
+<p class="text-on-surface-variant mb-6">Positioning, sentiment analysis, and health tracking for legacy and challenger brands.</p>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">verified</span>
+</div>
+<!-- Solution 3 -->
+<div class="p-10 bg-surface-container-low hover:bg-surface-container-high transition-colors group">
+<h4 class="font-serif text-2xl mb-4 group-hover:text-primary transition-colors">Market &amp; Channel<br>Intelligence<br><br></h4>
+<p class="text-on-surface-variant mb-6">High-density data interpretation for competitive landscape mapping.</p>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">query_stats</span>
+</div>
+<!-- Solution 4 -->
+<div class="p-10 bg-surface-container-low hover:bg-surface-container-high transition-colors group">
+<h4 class="font-serif text-2xl mb-4 group-hover:text-primary transition-colors">Growth &amp; Predictive Modeling</h4>
+<p class="text-on-surface-variant mb-6">Predictive modeling for expansion, product launch, and market entry.</p>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">trending_up</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-32 px-8">
+<div class="max-w-5xl mx-auto bg-stone-900 rounded-3xl p-16 md:p-24 relative overflow-hidden text-center">
+<div class="absolute inset-0 opacity-10">
+<img class="w-full h-full object-cover" data-alt="An abstract texture of layered silk or fine paper, flowing with organic curves. The color palette features deep, rich teal with elegant golden accents and highlights. The aesthetic is extremely premium, high-end editorial, and sophisticated, creating a subtle background texture for a call to action." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2M-8mS7wE0_86047yPjD1A7l1yL0y5n7S8z9C6V5B4N3M2Q1W0E9R8T7Y6U5I4O3P2A1S2D3F4G5H6J7K8L9Z0X1C2V3B4N5M6Q7W8E9R0T">
+</div>
+<div class="relative z-10">
+<h2 class="font-serif text-4xl md:text-6xl text-stone-50 mb-10 leading-tight">Ready to decode your next big challenge?</h2>
+<button class="bg-[#00889F] text-white px-12 py-5 text-xl font-bold rounded-lg shadow-2xl hover:scale-105 active:scale-95 transition-all"><div class="">Contact Us<br>+91-9830271786</div><div class=""><div>info@limina.com</div><div>liminaconsumerlab@gmail.com</div></div></button>
+<p class="text-stone-400 mt-8 font-label"><br></p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-stone-100 dark:bg-stone-950 w-full py-16 px-8 mt-24 opacity-80 hover:opacity-100 transition-opacity">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-end">
+<div class="">
+<div class="font-serif italic text-xl text-stone-900 dark:text-stone-50 mb-4"><img alt="Limina Consumer Lab" class="h-12 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0ugve4ihzNmaNmO4FK1Ob-s1DbNwnxURQsAcMLzssyNsGvFDf_XFiZrHRu4R_fxjo8ypE9uG7ByZZZDss7bn9rGDWfLYPINVxK-rBAAMZlwXXdIbWA94onw0yvYlDoLKvVAUWnZutSR4O9UwJLVB-MQEOH3xJWmtGWoWlRBK5sGo8ss4xi7KWuVbzTDOg3rnb38ReVGkU8Ymu2Sk_KgdQD_x_HQ92eiJAxvbAKjg599MLssgF8V9iGIXy7qlxgsKKSCA72XV2PtQmw"></div>
+<p class="font-sans text-sm tracking-wide text-stone-600 dark:text-stone-400">© 2026 Limina Consumer Lab. Intelligence for the Intelligent Observer.</p>
+</div>
+<div class="flex flex-wrap gap-6 md:justify-end">
+<a class="text-stone-500 hover:text-teal-700 underline underline-offset-4 decoration-teal-700/30 text-sm tracking-wide" href="#"><br></a>
+<a class="text-stone-500 hover:text-teal-700 underline underline-offset-4 decoration-teal-700/30 text-sm tracking-wide" href="#"><br></a>
+<a class="text-stone-500 hover:text-teal-700 underline underline-offset-4 decoration-teal-700/30 text-sm tracking-wide font-bold" href="#"><br></a>
+<a class="text-stone-500 hover:text-teal-700 underline underline-offset-4 decoration-teal-700/30 text-sm tracking-wide" href="#"><br></a>
+<a class="text-stone-500 hover:text-teal-700 underline underline-offset-4 decoration-teal-700/30 text-sm tracking-wide" href="#"><br></a>
+</div>
+</div>
+</footer>
+
+
+</body></html>
